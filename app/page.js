@@ -153,6 +153,10 @@ export default function Dashboard() {
       </div>
     );
   }
+  // Add quick stat calculations right above your return statement in app/page.js
+const totalBooks = books.length;
+const readingCount = books.filter((b) => b.status === "READING").length;
+const completedCount = books.filter((b) => b.status === "COMPLETED").length;
 
   return (
     <div className="min-h-screen p-6 md:p-12 max-w-6xl mx-auto">
@@ -163,8 +167,20 @@ export default function Dashboard() {
             Personal Library
           </h1>
           <p className="text-stone-500 text-sm mt-1">
-            Welcome back, <span className="font-semibold text-stone-700">{user?.name}</span>
+            Welcome back,{" "}
+            <span className="font-semibold text-stone-700">{user?.name}</span>
           </p>
+        </div>
+        <div className="flex gap-4 my-4">
+          <div className="bg-stone-100 px-3 py-1.5 rounded-lg text-xs font-medium text-stone-700">
+            Total Books: <span className="font-bold">{totalBooks}</span>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-lg text-xs font-medium text-amber-800">
+            Reading: <span className="font-bold">{readingCount}</span>
+          </div>
+          <div className="bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-lg text-xs font-medium text-emerald-800">
+            Completed: <span className="font-bold">{completedCount}</span>
+          </div>
         </div>
 
         <div className="flex items-center gap-3">
@@ -197,9 +213,7 @@ export default function Dashboard() {
                   : "text-stone-500 hover:text-stone-800"
               }`}
             >
-              {status === "ALL"
-                ? "All Books"
-                : status.replace(/_/g, " ")}
+              {status === "ALL" ? "All Books" : status.replace(/_/g, " ")}
             </button>
           ))}
         </div>
@@ -236,8 +250,8 @@ export default function Dashboard() {
                       book.status === "COMPLETED"
                         ? "bg-emerald-100 text-emerald-800"
                         : book.status === "READING"
-                        ? "bg-amber-100 text-amber-800"
-                        : "bg-stone-100 text-stone-700"
+                          ? "bg-amber-100 text-amber-800"
+                          : "bg-stone-100 text-stone-700"
                     }`}
                   >
                     {book.status.replace(/_/g, " ")}
