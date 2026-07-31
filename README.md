@@ -1,4 +1,5 @@
-# Personal Book Manager
+## 🔗 Live Demo
+[Personal Book Manager Live App](https://your-app-name.vercel.app)# Personal Book Manager
 
 A full-stack, responsive web application built with Next.js App Router, Tailwind CSS, MongoDB, and Mongoose. The platform allows users to log in, track their reading list, filter books by reading status, search titles/authors/tags, and manage their collection securely.
 
