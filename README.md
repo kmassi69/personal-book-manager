@@ -1,23 +1,47 @@
+# 📚 Personal Book Manager
+
+> A simple, intuitive, and elegant space for readers to log their personal book collection, track reading habits, and manage their library.
+
 ## 🔗 Live Demo
-[Personal Book Manager Live App](https://your-app-name.vercel.app)# Personal Book Manager
+👉 **[Personal Book Manager Live App](https://personal-book-manager.vercel.app)** *(Replace with your actual Vercel link)*
 
-A full-stack, responsive web application built with Next.js App Router, Tailwind CSS, MongoDB, and Mongoose. The platform allows users to log in, track their reading list, filter books by reading status, search titles/authors/tags, and manage their collection securely.
+---
 
-## Features
-- **JWT Authentication**: Secure user registration and login using `httpOnly` cookies.
-- **Book Management (CRUD)**: Add, edit, update status (`Want to Read`, `Reading`, `Completed`), and delete books.
-- **Filter & Search**: Instantly filter books by reading status or query by title, author, or custom tags.
-- **Modern UI**: Clean, responsive layout styled with Tailwind CSS.
+## ✨ Features
 
-## Tech Stack
-- **Framework**: Next.js (App Router)
-- **Database**: MongoDB with Mongoose ORM
-- **Authentication**: JWT & `bcryptjs`
-- **Styling**: Tailwind CSS
+- **🔒 Secure JWT Authentication**: User registration, login, and logout powered by JWT stored in secure `httpOnly` cookies.
+- **📖 Complete Book Management (CRUD)**: Add, edit, update reading status, and delete books seamlessly[cite: 1].
+- **🏷️ Status Tracking**: Organize books by designated reading stages:
+  - 📖 **Want to Read**[cite: 1]
+  - 📘 **Reading**[cite: 1]
+  - ✅ **Completed**[cite: 1]
+- **🔍 Filter & Search**: Instantly filter your library by reading status tabs or perform real-time searches across titles, authors, and custom tags[cite: 1].
+- **📊 Real-time Insights**: View clean, high-level summary statistics of your collection right on the dashboard[cite: 1].
+- **🎨 Modern & Responsive UI**: Designed with Tailwind CSS for a distraction-free user experience across desktop and mobile devices[cite: 1].
 
-## Getting Started
+---
 
-1. Clone the repository:
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js (App Router), React, Tailwind CSS[cite: 1]
+- **Backend**: Next.js API Routes[cite: 1]
+- **Database**: MongoDB Atlas with Mongoose ORM[cite: 1]
+- **Authentication**: JSON Web Tokens (JWT) & `bcryptjs`[cite: 1]
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally on your machine.
+
+### 1. Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [Git](https://git-scm.com/)
+- A [MongoDB Atlas](https://cloud.mongodb.com/) cluster connection string[cite: 1]
+
+### 2. Installation & Setup
+
+1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone [https://github.com/kmassi69/personal-book-manager.git](https://github.com/kmassi69/personal-book-manager.git)
    cd personal-book-manager
