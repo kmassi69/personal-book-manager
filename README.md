@@ -3,7 +3,7 @@
 > A simple, intuitive, and elegant space for readers to log their personal book collection, track reading habits, and manage their library.
 
 ## 🔗 Live Demo
-👉 **[Personal Book Manager Live App](https://personal-book-manager.vercel.app)** *(Replace with your actual Vercel link)*
+👉 **[Personal Book Manager Live App](https://personal-book-manager-z6mf.vercel.app/login)**
 
 ---
 
