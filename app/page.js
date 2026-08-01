@@ -153,7 +153,7 @@ export default function Dashboard() {
       </div>
     );
   }
-  // Add quick stat calculations right above your return statement in app/page.js
+
 const totalBooks = books.length;
 const readingCount = books.filter((b) => b.status === "READING").length;
 const completedCount = books.filter((b) => b.status === "COMPLETED").length;
