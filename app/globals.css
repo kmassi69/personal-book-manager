@@ -3,17 +3,4 @@
 :root {
   --font-serif: var(--font-serif), serif;
   --font-sans: var(--font-sans), sans-serif;
-
-  --color-paper-50: #FDFBF7;
-  --color-paper-100: #F4F0E8;
-  --color-paper-200: #E8E2D5;
-
-  --color-sage-500: #3A5A40;
-  --color-sage-600: #2F4A34;
-  --color-sage-700: #233827;
-}
-
-body {
-  background-color: #FDFBF7;
-  color: #1A1D1E;
 }
